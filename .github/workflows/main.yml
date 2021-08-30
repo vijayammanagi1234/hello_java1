@@ -24,6 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: java version 
-         run:java -version
+      - name: compile javacode
+         run:javac  HelloWorld.java
+      - name: run javacode
+         run:java Helloworld
       
