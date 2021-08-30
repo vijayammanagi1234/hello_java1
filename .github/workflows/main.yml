@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - run: actions/checkout@v2
       - name: compile javacode
          run:javac  HelloWorld.java
       - name: run javacode
